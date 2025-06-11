@@ -1,596 +1,286 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
-     
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>R-portfolio</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raheem Ullah - Full Stack Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
-
-<body id="top">
-
-    <div id="preloader">
-        <div id="loader"></div>
+<body>
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
     </div>
 
-    <!-- site header
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img style="width: 100%; height: 10vh;"  src="./images/LOGO.png" alt="Homepage">
-            </a>
+    <div class="floating-elements">
+        <div class="floating-element">
+            <i class="fas fa-code" style="font-size: 3rem; color: var(--primary-color);"></i>
         </div>
+        <div class="floating-element">
+            <i class="fas fa-laptop-code" style="font-size: 2.5rem; color: var(--accent-color);"></i>
+        </div>
+        <div class="floating-element">
+            <i class="fas fa-database" style="font-size: 2rem; color: var(--secondary-color);"></i>
+        </div>
+        <div class="floating-element">
+            <i class="fas fa-mobile-alt" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+        </div>
+    </div>
 
-        <nav class="header-nav-wrap">
-            <ul class="header-main-nav">
-                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
-                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
-                <li><a class="smoothscroll" href="#services" title="services">Services</a></li>
-                <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
-                <li><a class="smoothscroll" href="#contact" title="contact us">Say Hello</a></li>	
-            </ul>
-
-            <ul class="header-social">
-               
-                <li><a href="https://github.com/Raheemullah8"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/raheemullah8/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-               
-            </ul>
-        </nav>
-
-        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
-
-    </header> <!-- end s-header -->
-
-
-    <!-- intro
-    ================================================== -->
-    <section id="intro" class="s-intro target-section">
-
-        <div class="row intro-content">
-
-            <div class="column large-9 mob-full intro-text">
-                <h3>Hello, I'm Raheem</h3>
-                <h1 style="font-size: 2.7rem;">
-                    <br>
-                    Full-Stack Developer |</br> MERN Stack & PHP Laravel Expert |</br> Delivering Robust and Scalable Web Solutions
-                </h1>
-            </div>
-
-            <div class="intro-scroll">
-                <a href="#about" class="intro-scroll-link smoothscroll">
-                    Scroll For More
-                </a>
-            </div>
-
-            <div class="intro-grid"></div>
-            <div class="intro-pic"></div>
-
-        </div> <!-- end row -->
-
-    </section> <!-- end intro -->
-
-
-    <!-- about
-    ================================================== -->
-    <section id="about" class="s-about target-section">
-
-        <div class="about-me">
-
-            <div class="row heading-block" data-aos="fade-up">
-                <div class="column large-full">
-                    <h2 class="section-heading">About Me</h2>
-                </div>
-            </div>
-
-            <div class="row about-me__content" data-aos="fade-up">
-                <div class="column large-full about-me__text">
-                   <p>I am a professional web developer with expertise in HTML 🌐, CSS 🎨, JavaScript ⚙️, the MERN stack (MongoDB, Express.js, React, Node.js) 🚀, PHP 🐘, Laravel 🏗️, and Next.js 📦. With a strong foundation in both front-end and back-end technologies, I excel in delivering robust and scalable full-stack applications that meet modern user demands.
-
-                    I am committed to maintaining high coding standards and delivering exceptional user experiences. Please feel free to reach out for collaboration or inquiries regarding web development projects! 💬</p>
-                </div>
-            </div>
-    
-            <div class="row about-me__buttons">
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="https://www.linkedin.com/in/raheemullah8/" class="btn btn--stroke full-width">Hire Me</a>
-                </div>
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="#  " class="btn btn--primary full-width">Download CV</a>
-                </div>
-            </div>
-
-        </div> <!-- end about-me -->
-
-        <!-- <div class="about-experience">
-
-            <div class="row heading-block" data-aos="fade-up">
-                <div class="column large-full">
-                    <h2 class="section-heading">Work & Education</h2>
-                </div>
-            </div>
-
-            <div class="row about-experience__timeline">
-
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline">
-
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--work"></span>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2018 - Present</p>
-                                <h3 class="item-title">Awesome Studio</h3>
-                                <h5>Lead Designer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2017 - June 2018</p>
-                                <h3 class="item-title">Super Cool Agency</h3>
-                                <h5>Frontend Developer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">March 2016 - June 2017</p>
-                                <h3 class="item-title">Epic Design Studio</h3>
-                                <h5>Frontend Developer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
-
+    <div class="container">
+        <header class="cv-header">
+            <img src="./raheem.jpg" alt="Raheem Ullah" class="profile-img">
+            <div class="header-content">
+                <h1 class="name">RAHEEM ULLAH</h1>
+                <p class="title">Full Stack Developer</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+92 316 8062937</span>
                     </div>
-                </div>
-
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline">
-
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--education"></span>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2011 - June 2015</p>
-                                <h3 class="item-title">University of Life</h3>
-                                <h5>Master Degree</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2009 - June 2011</p>
-                                <h3 class="item-title">State Design University</h3>
-                                <h5>Bachelor Degree</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2005 - June 2009</p>
-                                <h3 class="item-title">School of Hard Knocks</h3>
-                                <h5>Bachelor Degree</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
-
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>r3109040@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Baldia Town, Karachi</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/Raheemullah8</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/raheemullah8</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <span>portfolio-liart-nine-37.vercel.app</span>
                     </div>
                 </div>
             </div>
+        </header>
 
-        </div> end about-experience -->
-
-    </section> <!-- end s-about -->
-
-
-    <!-- services
-    ================================================== -->
-  <section id="services" class="s-services ss-dark target-section">
-
-    <div class="shadow-overlay"></div>
-
-    <div class="row heading-block heading-block--center" data-aos="fade-up">
-        <div class="column large-full">
-            <h2 class="section-heading section-heading--centerbottom">My Capabilities as a Web Developer</h2>
-
-            <p class="section-desc">
-                I am passionate about helping businesses stand out by creating innovative and high-performance web solutions that drive success.
+        <section class="cv-section">
+            <h2 class="section-title">
+                <i class="fas fa-user-circle"></i> Profile Summary
+            </h2>
+            <p class="profile-summary">
+                Professional Full Stack Developer with hands-on experience building scalable web applications using modern technologies including React.js, Next.js, TypeScript, Node.js, PostgreSQL, and MongoDB. Strong background in both frontend and backend development with expertise in creating responsive, user-friendly interfaces and robust server-side solutions. Proficient in Git, GitHub, and collaborative team environments using agile workflows. Currently contributing to real-time web applications at Zerovertical Labs, including a Linktree-style project with cutting-edge tech stacks.
             </p>
-        </div>
-    </div> <!-- end heading-block -->
+        </section>
 
-    <div class="row services-list block-large-1-2 block-medium-1-2 block-tab-full">
-
-        <!-- Portfolio Item 1 -->
-        <div class="column item-service" data-aos="fade-up">
-            <div class="item-service__content">
-                <h4 class="item-title">Custom Web Development</h4>
-                <p>
-                    I specialize in creating fully customized, responsive, and visually appealing websites.
-                    From concept to deployment, I ensure that every aspect of your website is tailored to your 
-                    brand and business objectives using HTML, CSS, JavaScript, and modern frameworks like React and Next.js.
-                </p>
-            </div>
-        </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="column item-service" data-aos="fade-up">
-            <div class="item-service__content">
-                <h4 class="item-title">Full-Stack Application Development (MERN & Laravel)</h4>
-                <p>
-                    Leverage my expertise in the MERN stack (MongoDB, Express.js, React, Node.js) and PHP with Laravel to build dynamic,
-                    data-driven web applications. Whether you're looking to create an interactive platform, admin panel,
-                    or an e-commerce website, I deliver scalable, high-performance solutions.
-                </p>
-            </div>
-        </div>
-
-        <!-- Portfolio Item 3 -->
-        <div class="column item-service" data-aos="fade-up">
-            <div class="item-service__content">
-                <h4 class="item-title">Front-End Development & UI/UX Design</h4>
-                <p>
-                    With a keen eye for design and user experience, I create intuitive, fast,
-                    and aesthetically pleasing front-end interfaces. Using React.js and Next.js, 
-                    I ensure seamless navigation, fast load times, and an engaging user experience across all devices.
-                </p>
-            </div>
-        </div>
-
-        <!-- Portfolio Item 4 -->
-        <div class="column item-service" data-aos="fade-up">
-            <div class="item-service__content">
-                <h4 class="item-title">Back-End Development & API Integration</h4>
-                <p>
-                    I have extensive experience in developing robust back-end systems using Node.js,
-                    Express.js, and Laravel, along with integrating third-party APIs, payment gateways, 
-                    and databases. I ensure your application runs smoothly and securely, handling 
-                    complex workflows and data management.
-                </p>
-            </div>
-        </div>
-
- 
-
-    </div> <!-- end services-list -->
-
-</section> <!-- end s-services -->
-
-
-
-    <!-- works
-    ================================================== -->
-    <section id="works" class="s-works target-section">
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom">Selected Works</h2>
-                <p class="section-desc">
-                    Here are some of my selected works I have done lately. Feel free to 
-                    check them out.
-                </p>
-            </div>
-        </div> <!-- end heading-block -->
-
-        <div class="masonry-wrap">
-
-            <div class="masonry">
-                <div class="grid-sizer"></div>
-    
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="./images/portfolio/gallery/PORT1.PNG" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                                <img src="./images/portfolio/PORT1.PNG" 
-                                     srcset="images/portfolio/PORT1.PNG 1x, images/portfolio/PORT1.PNG 2x" alt="">
-                            </a>    
-                            <a href="https://food-store-react-js.vercel.app/" class="item-folio__project-link" title="Project link" target="_blank"></a>
-                        </div>
-    
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                FoodStore
-                            </h4>
-                            <p class="item-folio__cat">
-                                FoodStore
-                            </p>
-                        </div>
-    
-                        <div class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                        </div>
+        <section class="cv-section">
+            <h2 class="section-title">
+                <i class="fas fa-cogs"></i> Technical Skills
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4><i class="fas fa-paint-brush"></i> Frontend</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">TypeScript</span>
                     </div>
-                </div> <!-- end masonry__brick -->
-    
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="./images/portfolio/gallery/port2.PNG" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                                <img src="./images/portfolio/port2.PNG" 
-                                     srcset="images/portfolio/port2.PNG 1x, images/portfolio/port2.PNG@2x.jpg 2x" alt="">
-                            </a>
-                            <a href="https://reactecom-pro.netlify.app/" class="item-folio__project-link" title="Project link" target="_blank"></a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                R-ecom
-
-                            </h4>
-                            <p class="item-folio__cat">
-                                E-Commerce Content
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                        </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-server"></i> Backend</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Core PHP</span>
+                        <span class="skill-tag">REST APIs</span>
                     </div>
-                </div> <!-- end masonry__brick -->
-
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                            
-                        <div class="item-folio__thumb">
-                            <a href="./images/portfolio/gallery/port3.PNG" class="thumb-link" title="The Beetle Car" data-size="1050x700">
-                                <img src="./images/portfolio/port3.PNG"
-                                     srcset="images/portfolio/port3.PNG 1x, images/portfolio/port3.PNG@2x.jpg 2x" alt="">
-                            </a>
-                            <a href="https://ecom-project-alpha.vercel.app/" class="item-folio__project-link" title="Project link" target="_blank"></a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Fashion For Always
-                            </h4>
-                            <p class="item-folio__cat">
-                                Fashion Hub
-
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, eligendi..</p>
-                        </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-database"></i> Database</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Firebase</span>
                     </div>
-                </div> <!-- end masonry__brick -->
-
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="./images//portfolio/gallery/port4.PNG" class="thumb-link" title="Grow Green" data-size="1050x700">
-                                <img src="./images//portfolio/port4.PNG" 
-                                     srcset="images/portfolio/port4.PNG 1x, images/portfolio/port4.PNG 2x" alt="">
-                            </a>
-                            <a href="https://hackatone.netlify.app/" class="item-folio__project-link" title="Project link" target="_blank"></a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Eat Sleep And
-
-                            </h4>
-                            <p class="item-folio__cat">
-                                Supper delicious Burger in town!
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>Food is any substance consumed to provide nutritional support for an organism..</p>
-                        </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-tools"></i> Tools & Others</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Vercel</span>
+                        <span class="skill-tag">Netlify</span>
                     </div>
-                </div> <!-- end masonry__brick -->
-
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                            
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/port5.PNG" class="thumb-link" title="Guitarist" data-size="1050x700">
-                                <img src="images/portfolio/port5.PNG" 
-                                     srcset="images/portfolio/port5.PNG 1x, images/portfolio/port5.PNG 2x" alt="">
-                            </a>
-                            <a href="https://todoapp-using-contextapi.netlify.app/" class="item-folio__project-link" title="Project link" target="_blank"></a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                todoapp-using-contextapi
-                            </h4>
-                            <p class="item-folio__cat">
-                                Web Design
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>todoapp-using-contextapi</p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
-        
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                            
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/port6.PNG" class="thumb-link" title="Palmeira" data-size="1050x700">
-                                <img src="images/portfolio/port6.PNG"
-                                     srcset="images/portfolio/port6.PNG 1x, images/portfolio/port6.PNG 2x" alt="">
-                            </a>
-                            <a href="https://react-card-modal.netlify.app/" class="item-folio__project-link" title="Project link" target="_blank"></a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Card Gallery
-                            </h4>
-                            <p class="item-folio__cat">
-                                Web Design
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>React js Deasing</p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-            </div> <!-- end masonry -->
-
-        </div> <!-- end masonry-wrap -->
-
-    </section> <!-- end s-work -->
-
-
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact ss-dark target-section">
-
-        <div class="row heading-block" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading">Get In Touch</h2>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="row contact-main" data-aos="fade-up">
-            <div class="column large-full">
-                <p class="contact-email">
-                    <a href="mailto:#0">raheem3434a@gmail.com</a>
-                </p>
-
-                <p class="section-desc">
-                I'm happy to connect, listen and help. Let's work together and build
-                something awesome. Let's turn your idea to an even greater product.
-                <a href="raheem3434a@gmail.com">Email Me</a>.
-                </p>
+        <section class="cv-section">
+            <h2 class="section-title">
+                <i class="fas fa-briefcase"></i> Professional Experience
+            </h2>
+            <div class="experience-item pulse">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="job-title">Full Stack Developer</h3>
+                        <div class="company">Zerovertical Labs</div>
+                    </div>
+                    <div class="duration">Mar 2025 – Present</div>
+                </div>
+                <div class="experience-description">
+                    <ul>
+                        <li>Collaborated in a team environment to develop a real-time Linktree-style web application</li>
+                        <li>Utilized Next.js and TypeScript for frontend development and server-side rendering</li>
+                        <li>Integrated PostgreSQL for scalable and structured data management</li>
+                        <li>Practiced Git-based version control and code reviews via GitHub</li>
+                        <li>Worked in an agile team environment, participating in stand-ups and sprint reviews</li>
+                        <li>Contributed to building high-performance, scalable web applications with modern tech stacks</li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
-
-            <div class="column large-5 medium-full contact-phone">
-                <h4>Call Me</h4>
-                <a href="tel:197-543-2345">+92 3168062937</a>
+        <section class="cv-section">
+            <h2 class="section-title">
+                <i class="fas fa-project-diagram"></i> Key Projects
+            </h2>
+            
+            <div class="project-item">
+                <div class="project-header">
+                    <div>
+                        <h3 class="project-title">Employee Task Management System</h3>
+                        <div class="project-tech">React.js, LocalStorage</div>
+                    </div>
+                </div>
+                <div class="project-description">
+                    A comprehensive task management system built using React.js with localStorage for persistent data storage, enabling efficient task tracking and team collaboration.
+                </div>
+                <div class="project-links">
+                    <a href="https://employee-management-system-teal.vercel.app/" class="project-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
             </div>
 
-            <div class="column large-7 medium-full contact-social">
-                <h4>Social</h4>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/raheemullah8/" title="linkedin">linkedin</a></li>
-                    <li><a href="https://github.com/Raheemullah8" title="github">github</a></li>
+            <div class="project-item">
+                <div class="project-header">
+                    <div>
+                        <h3 class="project-title">Location-Based Services App</h3>
+                        <div class="project-tech">Next.js, Full-Stack</div>
+                    </div>
+                </div>
+                <div class="project-description">
+                    A full-stack Next.js application offering personalized services based on user location, featuring real-time location tracking and dynamic content delivery.
+                </div>
+                <div class="project-links">
+                    <a href="https://findyourfrainds.vercel.app/" class="project-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div>
+                        <h3 class="project-title">Food Store Website</h3>
+                        <div class="project-tech">React.js, Firebase</div>
+                    </div>
+                </div>
+                <div class="project-description">
+                    An online food store platform using React.js and Firebase, enabling real-time updates, dynamic data flow, and seamless user interactions.
+                </div>
+                <div class="project-links">
+                    <a href="https://food-store-react-js.vercel.app/" class="project-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div>
+                        <h3 class="project-title">E-Commerce Website</h3>
+                        <div class="project-tech">React.js, Firebase</div>
+                    </div>
+                </div>
+                <div class="project-description">
+                    A fully functional React-based e-commerce platform with Firebase backend integration, providing real-time data management and seamless user experiences.
+                </div>
+                <div class="project-links">
+                    <a href="https://reactecom-pro.netlify.app/" class="project-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cv-section">
+            <h2 class="section-title">
+                <i class="fas fa-graduation-cap"></i> Education
+            </h2>
+            
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="education-content">
+                    <h4>MERN Stack Development Certification</h4>
+                    <p><strong>Saylani Mass IT Training</strong></p>
                     
-                </ul>
-            </div>
-
-        </div> <!-- end contact-infos -->
-
-    </section> <!-- end s-contact -->
-
-
-    <!-- footer
-    ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="column large-full ss-copyright">
-                 
-                <span>Design by <a href="">Raheem</a></span>
-            </div>            
-
-            <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top"></a>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
+                    <p>2023 – 2025</p>
                 </div>
             </div>
 
-        </div>
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-computer"></i>
+                </div>
+                <div class="education-content">
+                    <h4>ADSE – Computer Science</h4>
+                    <p><strong>APTECH Learning</strong></p>
+                    <p>2021 – 2025</p>
+                </div>
+            </div>
 
-    </div><!-- end photoSwipe background -->
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="education-content">
+                    <h4>FSc Pre-Engineering</h4>
+                    <p><strong>Premier Grammar School</strong></p>
+                    <p>2022 – 2024</p>
+                </div>
+            </div>
+        </section>
 
+        <section class="cv-section">
+            <h2 class="section-title">
+                <i class="fas fa-heart"></i> Hobbies & Interests
+            </h2>
+            <div class="hobbies-grid">
+                <div class="hobby-item">
+                    <i class="fas fa-cricket"></i>
+                    <span>Cricket</span>
+                </div>
+                <div class="hobby-item">
+                    <i class="fas fa-futbol"></i>
+                    <span>Football</span>
+                </div>
+                <div class="hobby-item">
+                    <i class="fas fa-plane"></i>
+                    <span>Traveling</span>
+                </div>
+                <div class="hobby-item">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Gaming</span>
+                </div>
+            </div>
+        </section>
+    </div>
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
+    <script src="./script.js"></script>
 </body>
+</html>
