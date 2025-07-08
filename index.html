@@ -1,433 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raheem Ullah - Full Stack Developer</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-  
-  </head>
-  <body>
-    <!-- Cosmic Background -->
-    <div class="cosmic-bg"></div>
-    <div class="floating-orbs">
-      <div class="orb"></div>
-      <div class="orb"></div>
-      <div class="orb"></div>
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation"></div>
+    
+    <!-- Floating Particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
     </div>
 
-    <!-- Scroll Progress -->
-    <div class="scroll-progress">
-      <div class="scroll-progress-bar" id="scrollProgress"></div>
+    <!-- Navigation -->
+    <div class="nav">
+        <div class="nav-item active" data-section="hero"></div>
+        <div class="nav-item" data-section="skills"></div>
+        <div class="nav-item" data-section="experience"></div>
+        <div class="nav-item" data-section="projects"></div>
+        <div class="nav-item" data-section="education"></div>
+        <div class="nav-item" data-section="hobbies"></div>
     </div>
 
-    <!-- Navigation Dots -->
-    <div class="nav-dots">
-      <div class="nav-dot active" data-section="hero"></div>
-      <div class="nav-dot" data-section="skills"></div>
-      <div class="nav-dot" data-section="experience"></div>
-      <div class="nav-dot" data-section="projects"></div>
-      <div class="nav-dot" data-section="education"></div>
-      <div class="nav-dot" data-section="hobbies"></div>
-    </div>
-
-    <div class="container">
-      <!-- Hero Section -->
-      <section id="hero" class="hero-section">
-        <div class="hero-card">
-          <div class="hero-content">
-            <div class="profile-section">
-              <div class="profile-image">
-                <img src="./IMG_20241212_182045.jpg" alt="Raheem Ullah">
-              </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Raheem Ullah</h1>
+                    <p class="hero-subtitle">Full Stack Developer</p>
+                    <p class="hero-description">
+                        Passionate developer creating stunning web experiences with cutting-edge technologies. 
+                        Specialized in React, Next.js, Node.js, and modern web development practices.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            View Projects
+                        </a>
+                    </div>
+                </div>
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="./quality_restoration_20250221104752746.jpg" alt="Raheem Ullah">
+                    </div>
+                </div>
             </div>
             
-            <div class="hero-text-content">
-              <h1 class="hero-title">Raheem Ullah</h1>
-              <p class="hero-subtitle">Full Stack Developer</p>
-              <p class="hero-description">
-                Passionate developer creating stunning web experiences with cutting-edge technologies. 
-                Specialized in React, Next.js, Node.js, and modern web development practices.
-              </p>
-
-              <div class="contact-grid">
+            <div class="contact-info">
                 <div class="contact-item">
-                  <div class="contact-icon">
-                    <i class="fas fa-phone"></i>
-                  </div>
-                  <span>+92 316 8062937</span>
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <span>+92 316 8062937</span>
                 </div>
                 <div class="contact-item">
-                  <div class="contact-icon">
-                    <i class="fas fa-envelope"></i>
-                  </div>
-                  <span>raheem3434a@gmail.com</span>
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <span>raheem3434a@gmail.com</span>
                 </div>
                 <div class="contact-item">
-                  <div class="contact-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                  </div>
-                  <span>Baldia Town, Karachi</span>
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <span>Baldia Town, Karachi</span>
                 </div>
                 <div class="contact-item">
-                  <div class="contact-icon">
-                    <i class="fab fa-github"></i>
-                  </div>
-                  <a href="https://github.com/Raheemullah8" style="text-decoration: none;"><span>github.com/Raheemullah8</span></a>
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <a href="https://github.com/Raheemullah8" style="color: inherit; text-decoration: none;">
+                        <span>github.com/Raheemullah8</span>
+                    </a>
                 </div>
                 <div class="contact-item">
-                  <div class="contact-icon">
-                    <i class="fab fa-linkedin"></i>
-                  </div>
-                  <a href="https://www.linkedin.com/in/raheemullah8/?originalSubdomain=pk" style="text-decoration: none;"><span>linkedin.com/in/raheemullah8</span></a>
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <a href="https://www.linkedin.com/in/raheemullah8/?originalSubdomain=pk" style="color: inherit; text-decoration: none;">
+                        <span>linkedin.com/in/raheemullah8</span>
+                    </a>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Skills Section -->
-      <section id="skills" class="section">
-        <div class="section-header">
-          <h2 class="section-title">Technical Arsenal</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-paint-brush"></i> Frontend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>React.js</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Next.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>TypeScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Node.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Express.js</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>PHP</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>REST APIs</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Database & Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>PostgreSQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>MongoDB</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Git & GitHub</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Firebase</span>
+                            <span>68%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 68%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="skills-container">
-          <div class="skill-group">
-            <h3 class="skill-group-title">
-              <i class="fas fa-paint-brush"></i>
-              Frontend Development
-            </h3>
-            <div class="skill-item">
-              <div class="skill-name">
-                <span>React.js</span>
-                <span>95%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="95"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-name">
-                <span>Next.js</span>
-                <span>90%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="90"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-name">
-                <span>TypeScript</span>
-                <span>88%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="88"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-name">
-                <span>JavaScript</span>
-                <span>93%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="93"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <h3 class="skill-group-title">
-              <i class="fas fa-server"></i>
-              Backend Development
-            </h3>
-            <div class="skill-item">
-              <div class="skill-name">
-                <span>Node.js</span>
-                <span>70%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="90"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-name">
-                <span>Express.js</span>
-                <span>80%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="85"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-name">
-                <span>PHP</span>
-                <span>60%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="75"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-name">
-                <span>REST APIs</span>
-                <span>75%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="88"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <h3 class="skill-group-title">
-              <i class="fas fa-database"></i>
-              Database & Tools
-            </h3>
-            <div class="skill-item">
-              <div class="skill-name">
-                <span>PostgreSQL</span>
-                <span>65%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="85"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-name">
-                <span>MongoDB</span>
-                <span>70%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="80"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-name">
-                <span>Git & GitHub</span>
-                <span>80%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="92"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-name">
-                <span>Firebase</span>
-                <span>70%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="78"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    </section>
 
     <!-- Experience Section -->
-<section id="experience" class="section">
-  <div class="section-header">
-    <h2 class="section-title">Professional Journey</h2>
-  </div>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-marker"></div>
-      <div class="timeline-content">
-        <h3>Full Stack Developer</h3>
-        <div class="company">Zerovertical Labs</div>
-        <div class="duration">6 Months Experience</div>
-        <p>
-          Gained hands-on experience in developing innovative web applications using cutting-edge technologies.
-          Specialized in React.js, Next.js, and TypeScript for building scalable, high-performance solutions.
-        </p>
-        <ul>
-          <li>Developed real-time Linktree-style applications</li>
-          <li>Implemented server-side rendering with Next.js</li>
-          <li>Integrated PostgreSQL for robust data management</li>
-          <li>Collaborated in agile development environment</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-      <!-- Projects Section -->
-      <section id="projects" class="section">
-        <div class="section-header">
-          <h2 class="section-title">Featured Projects</h2>
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Journey</h2>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="company-info">
+                            <h3 class="job-title">Full Stack Developer</h3>
+                            <div class="company-name">Zerovertical Labs</div>
+                            <div class="duration">
+                                <i class="fas fa-calendar-alt"></i>
+                                6 Months Experience
+                            </div>
+                        </div>
+                        <div class="company-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-content">
+                        <p class="experience-description">
+                            Gained hands-on experience in developing innovative web applications using cutting-edge technologies.
+                            Specialized in React.js, Next.js, and TypeScript for building scalable, high-performance solutions.
+                        </p>
+                        
+                        <div class="achievements">
+                            <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+                            <div class="achievement-grid">
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-link"></i>
+                                    </div>
+                                    <div class="achievement-text">
+                                        <strong>Real-time Applications</strong>
+                                        <span>Developed Linktree-style applications with live updates</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-server"></i>
+                                    </div>
+                                    <div class="achievement-text">
+                                        <strong>Server-Side Rendering</strong>
+                                        <span>Implemented SSR with Next.js for better performance</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="achievement-text">
+                                        <strong>Database Integration</strong>
+                                        <span>Integrated PostgreSQL for robust data management</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="achievement-text">
+                                        <strong>Team Collaboration</strong>
+                                        <span>Worked in agile development environment</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <h4><i class="fas fa-code"></i> Technologies Used</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">Employee Task Management System</h3>
-              <div class="project-tech">React.js • LocalStorage • Modern UI</div>
-            </div>
-            <div class="project-body">
-              <p class="project-description">
-                A comprehensive task management system built with React.js featuring 
-                persistent data storage, intuitive UI, and efficient task tracking capabilities.
-              </p>
-              <a
-                href="https://employee-management-system-teal.vercel.app/"
-                class="project-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fas fa-external-link-alt"></i>
-                Live Demo
-              </a>
-            </div>
-          </div>
+    </section>
 
-          <div class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">EventFinder - Location Services</h3>
-              <div class="project-tech">Next.js • Full-Stack • Real-time</div>
-            </div>
-            <div class="project-body">
-              <p class="project-description">
-                A sophisticated location-based services application offering personalized 
-                experiences with real-time tracking and dynamic content delivery.
-              </p>
-              <a
-                href="https://findyourfrainds.vercel.app/"
-                class="project-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fas fa-external-link-alt"></i>
-                Live Demo
-              </a>
-            </div>
-          </div>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Employee Task Management System</h3>
+                        <div class="project-tech">React.js • LocalStorage • Modern UI</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            A comprehensive task management system built with React.js featuring 
+                            persistent data storage, intuitive UI, and efficient task tracking capabilities.
+                        </p>
+                        <a href="https://employee-management-system-teal.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
 
-          <div class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">Food Store Platform</h3>
-              <div class="project-tech">React.js • Firebase • Real-time</div>
-            </div>
-            <div class="project-body">
-              <p class="project-description">
-                Modern e-commerce platform for food delivery with real-time updates, 
-                dynamic inventory management, and seamless user experience.
-              </p>
-              <a
-                href="https://food-store-react-js.vercel.app/"
-                class="project-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fas fa-external-link-alt"></i>
-                Live Demo
-              </a>
-            </div>
-          </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">EventFinder - Location Services</h3>
+                        <div class="project-tech">Next.js • Full-Stack • Real-time</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            A sophisticated location-based services application offering personalized 
+                            experiences with real-time tracking and dynamic content delivery.
+                        </p>
+                        <a href="https://findyourfrainds.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
 
-          <div class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">E-Commerce Excellence</h3>
-              <div class="project-tech">React.js • Firebase • Advanced UI</div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Food Store Platform</h3>
+                        <div class="project-tech">React.js • Firebase • Real-time</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Modern e-commerce platform for food delivery with real-time updates, 
+                            dynamic inventory management, and seamless user experience.
+                        </p>
+                        <a href="https://food-store-react-js.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">E-Commerce Excellence</h3>
+                        <div class="project-tech">React.js • Firebase • Advanced UI</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Feature-rich e-commerce platform with Firebase backend integration, 
+                            providing comprehensive shopping experience with modern design.
+                        </p>
+                        <a href="https://reactecom-pro.netlify.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="project-body">
-              <p class="project-description">
-                Feature-rich e-commerce platform with Firebase backend integration, 
-                providing comprehensive shopping experience with modern design.
-              </p>
-              <a
-                href="https://reactecom-pro.netlify.app/"
-                class="project-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fas fa-external-link-alt"></i>
-                Live Demo
-              </a>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Education Section -->
-      <section id="education" class="section">
-        <div class="section-header">
-          <h2 class="section-title">Education & Certifications</h2>
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>MERN Stack Development</h3>
+                    <div class="subtitle">Saylani Mass IT Training</div>
+                    <div class="year">2023 – 2025</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>ADSE – Computer Science</h3>
+                    <div class="subtitle">APTECH Learning</div>
+                    <div class="year">2021 – 2025</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>FSc Pre-Engineering</h3>
+                    <div class="subtitle">Premier Grammar School</div>
+                    <div class="year">2022 – 2024</div>
+                </div>
+            </div>
         </div>
-        <div class="education-grid">
-          <div class="education-card">
-            <div class="education-icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <div class="education-content">
-              <h3>MERN Stack Development</h3>
-              <div class="school">Saylani Mass IT Training</div>
-              <div class="year">2023 – 2025</div>
-            </div>
-          </div>
+    </section>
 
-          <div class="education-card">
-            <div class="education-icon">
-              <i class="fas fa-laptop-code"></i>
-            </div>
-            <div class="education-content">
-              <h3>ADSE – Computer Science</h3>
-              <div class="school">APTECH Learning</div>
-              <div class="year">2021 – 2025</div>
-            </div>
-          </div>
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section">
+        <div class="container">
+            <h2 class="section-title">Interests & Hobbies</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-baseball-ball"></i>
+                    </div>
+                    <h3>Cricket</h3>
+                </div>
 
-          <div class="education-card">
-            <div class="education-icon">
-              <i class="fas fa-graduation-cap"></i>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Football</h3>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Traveling</h3>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming</h3>
+                </div>
             </div>
-            <div class="education-content">
-              <h3>FSc Pre-Engineering</h3>
-              <div class="school">Premier Grammar School</div>
-              <div class="year">2022 – 2024</div>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Hobbies Section -->
-      <section id="hobbies" class="section">
-        <div class="section-header">
-          <h2 class="section-title">Interests & Hobbies</h2>
-        </div>
-        <div class="hobbies-grid">
-          <div class="hobby-card">
-            <div class="hobby-icon">
-              <i class="fas fa-baseball-ball"></i>
-            </div>
-            <div class="hobby-name">Cricket</div>
-          </div>
-
-          <div class="hobby-card">
-            <div class="hobby-icon">
-              <i class="fas fa-futbol"></i>
-            </div>
-            <div class="hobby-name">Football</div>
-          </div>
-
-          <div class="hobby-card">
-            <div class="hobby-icon">
-              <i class="fas fa-plane"></i>
-            </div>
-            <div class="hobby-name">Traveling</div>
-          </div>
-
-          <div class="hobby-card">
-            <div class="hobby-icon">
-              <i class="fas fa-gamepad"></i>
-            </div>
-            <div class="hobby-name">Gaming</div>
-          </div>
-        </div>
-      </section>
-    </div>
-   <script src="./script.js"></script>
-  </body>
+  <script src="./script.js"></script>
+</body>
 </html>
